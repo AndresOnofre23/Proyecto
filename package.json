@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node app.js --exec",
     "dev": "nodemon app.js",
     "devbabel": "nodemon app.js --exec babel-node"
   },
@@ -19,7 +20,11 @@
     "mongoose": "^5.13.3",
     "mongoose-unique-validator": "^2.0.3",
     "morgan": "^1.10.0",
-    "underscore": "^1.13.1"
+    "underscore": "^1.13.1",
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.8"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

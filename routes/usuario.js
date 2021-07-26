@@ -12,6 +12,22 @@ const saltRounds = 10;
 // Filtrar campos de PUT
 const _ = require('underscore');
 
+//Get de todos los usuarios
+router.get('/usuarios', async(req, res) => {
+
+  const usuarioId = req.usuario
+
+  try {
+    const usuarioDB = await User.find({usuarioId});
+    res.json(usuarioDB);
+  } catch (error) {
+    return res.status(400).json({
+      mensaje: 'Ocurrio un error',
+      error
+    })
+  }
+});
+
 // POST
 router.post('/nuevo-usuario', async(req, res) => {
 
