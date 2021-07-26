@@ -7,10 +7,10 @@ const app = express();
 
 // Conexion a DB
 const mongoose = require('mongoose');
-const uri = 'mongodb://localhost:27017/projecto';
+//const uri = 'mongodb://localhost:27017/projecto';
 
 // Conexion en la nube
-//const uri = 'mongodb+srv://user_udemy:O8Wlcc8nF8OlAouV@udemy-ncdk5.mongodb.net/udemy?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://root:root@proyecto.6j30z.mongodb.net/projecto?retryWrites=true&w=majority';
 
 const options = {
   useNewUrlParser: true, useCreateIndex: true,  useUnifiedTopology: true
